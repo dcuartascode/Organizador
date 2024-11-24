@@ -1,13 +1,10 @@
-body {
-  font-family: sans-serif;
-  -webkit-font-smoothing: auto;
-  -moz-font-smoothing: auto;
-  -moz-osx-font-smoothing: grayscale;
-  font-smoothing: auto;
-  text-rendering: optimizeLegibility;
-  font-smooth: always;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
+/* Aplica un suavizado de fuentes para navegadores basados en Webkit (Safari, Chrome) */
+element {
+  -webkit-font-smoothing: antialiased; /* Suavizado para Chrome y Safari */
+  -moz-osx-font-smoothing: grayscale;  /* Suavizado para Firefox en macOS */
+  font-family: 'Arial', sans-serif;     /* Define una fuente de respaldo */
+  font-weight: normal;                 /* Peso de la fuente */
+  font-style: normal;                  
 }
 
 h1 {
